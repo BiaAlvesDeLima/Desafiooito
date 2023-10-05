@@ -14,7 +14,7 @@ html{
 }
 
 .image{
-  background-image: url(imagens/fundo.png);
+  background-image: url(fundo.png);
   height: 46em;
   background-repeat: no-repeat;
   background-size: cover;
