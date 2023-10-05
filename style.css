@@ -1,0 +1,118 @@
+html{
+  font-family: sans-serif;
+}
+
+.header{
+  text-align: center;
+  margin: auto;
+  background-color: #0D0D0D;
+}
+
+.header_logo{
+  width: 5em;
+  height: auto;
+}
+
+.image{
+  background-image: url(imagens/fundo.png);
+  height: 46em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#hamburguer{
+  background-color: orange;
+  color: #0D0D0D;
+  display: block;
+  text-align: center;
+  padding: .3em;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.header_nav{
+  background-color: #0D0D0D;
+  display: none;
+}
+
+.header_nav.show{
+  display: block;
+}
+
+ul{
+  margin: 0;
+}
+
+.header_nav ul{
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+.header_nav a{
+  color: orange;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.header_nav a:hover{
+  background-color: color-mix(in srgb, orange, white 50%);
+  color: #0D0D0D;
+}
+
+footer{
+  background-color: #0D0D0D;
+  color: orange;
+  align-items: center;
+  display: flex;
+  
+}
+
+@media screen and (min-width: 48em){
+  #hamburguer{
+    display: none;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0D0D;
+  }
+  
+  .header_logo{
+    margin-left: 2em;
+  }
+  
+  image{
+    max-width: 2em;
+    
+  }
+  
+  .header_nav{
+    display: block;
+  }
+  
+  .header_nav ul{
+    margin-right: 2em;
+    font-size: .9em;
+  }
+  
+  .header_nav li{
+    display: inline-block;
+  }
+  
+  .header_nav a{
+    border-radius: 5px;
+    
+  }
+  
+  .header_nav a:hover{
+    background-color: orange;
+    color: white;
+  }
+}
